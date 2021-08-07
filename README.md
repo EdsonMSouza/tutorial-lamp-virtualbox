@@ -22,13 +22,13 @@ Faça o download do programa VirtualBox no endereço: [https://www.virtualbox.or
 ## Instalação do Apache, PHP e MySQL
 Todas as etapas a seguir estão disponíveis no vídeo: [link](link)
 
-Para executar comandos no terminal do Linux é necessário pressionar a tecla [ENTER] para executar o(s) comandos(s).
+Para executar comandos no terminal do Linux é necessário pressionar a tecla ```ENTER``` para executar o(s) comandos(s).
 
-1. Acesse o **Terminal do Linux** pressionando as teclas as teclas CTRL+ALT+T. Uma outra forma é pressionar a tecla "Windows" e digitar **cmd**
+1. Acesse o **Terminal do Linux** pressionando as teclas as teclas ```CTRL+ALT+T```. Uma outra forma é pressionar a tecla ```Windows``` e digitar **cmd**
 2. Primeiro, precisaremos **atualizar o índice** do repositório do sistema para instalar a versão mais recente do Apache2 (Servidor Web)
     + ```sudo apt-get update```
 
-3. A seguir **atualize os pacotes**. (Pressione "Y" quando solicitado).
+3. A seguir **atualize os pacotes**. (Pressione ```Y``` quando solicitado).
     + ```sudo apt-get upgrade```
 
 4. Abrindo as portas 22 (SSH), 80 (HTTP) and 443 (HTTPS) e habilitando o Firewall (ufw). **Execute um comando de cada vez**.
@@ -79,14 +79,14 @@ Se tudo estiver "OK" (aparecer os dados do Apache), exclua o arquivo criado com 
 
 ## Verificando o *status* da instalação do MySQL
 ```sudo systemctl status mariadb```
-+ Para sair, pressione CTRL+C
++ Para sair, pressione ```CTRL+C```.
 
 ## Protegendo o banco de dados
 ```sudo mysql_secure_installation```
 
-Como você não tem uma senha de root definida para o banco de dados, você deve simplesmente pressionar **[Enter]** quando solicitado, pressionando **Y** na próxima pergunta para definir uma senha de ```root``` (**mantenha-a segura e protegida!**).
+Como você não tem uma senha de root definida para o banco de dados, você deve simplesmente pressionar ```Enter``` quando solicitado, pressionando **Y** na próxima pergunta para definir uma senha de ```root``` (**mantenha-a segura e protegida!**).
 
-Para as próximas perguntas, você pode pressionar **[Enter]** para aplicar os padrões para cada um dos itens, que eles ajudarão a proteger sua nova instalação do banco de dados.
+Para as próximas perguntas, você pode pressionar ```Enter``` para aplicar os padrões para cada um dos itens, que eles ajudarão a proteger sua nova instalação do banco de dados.
 
 ## Acessando o MySQL via CLI (*Command Line*)
 Digite o seguinte comando
@@ -95,7 +95,9 @@ Digite o seguinte comando
 Você receberá um [PROMPT] no Terminal Linux com o seguinte formato: ```MariaDB [(none)]>```.
 
 ## Criação de usuário no MySQL
-Criando um usuário **admin** padrão no banco de dados diferente de **root**. Para isso, digite uma linha de cada vez e pressione [ENTER] para executá-la. **Não esqueça de colocar o ponto-e-vírgula ";" no final de cada linha.
+Criando um usuário **admin** padrão no banco de dados diferente de **root**. Para isso, digite uma linha de cada vez e pressione ```ENTER``` para executá-la.
+
+**Não esqueça** de colocar o ponto-e-vírgula ";" no final de cada linha.
 
 1. ```CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';```
 2. ```GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';```
@@ -110,8 +112,8 @@ Para acessar o MySQL com o novo usuário, digite o comando a seguir e informe a 
 ## Criando um banco de dados no MySQL
 ``` CREATE DATABASE teste;```
 
-## Selecionando o banco ```teste```
-```USE teste;```
+## Selecionando o banco ```aula_teste```
+```USE aula_teste;```
 
 ## Criando uma tabela de dados
 ```CREATE TABLE tb_teste (id int primary key not null auto_increment, nome varchar(50));```
@@ -134,10 +136,11 @@ Criando um diretório para colocar o arquivo de teste de conexão do PHP com o b
 ## Acessando o diretório criado
 ```cd /var/www/html/teste```
 
-Para criar o ```script PHP``` e conectar com o banco de dados criado, utilizando a biblioteca PDO de acesso a dados, digite o seguinte comando para abrir o editor de textos (Nano):
+Para criar o ```script PHP``` e conectar com o banco de dados criado, utilizando a biblioteca PDO de acesso a dados, digite o seguinte comando para abrir o editor de textos (```Nano```):
+
 ```sudo nano index.php```
 
-Digite as instruções a seguir no arquivo:
+Digite as instruções a seguir no arquivo aberto:
 
 ```php
 <?php
@@ -163,6 +166,8 @@ Para salvar o conteúdo, pressione as teclas ```CTRL+X``` simultaneamente, depoi
 Acesse novamente o navegador e digite: [http://localhost/teste](http://localhost/teste)
 
 Se tudo ocorreu como o esperado, deverá ser mostrado no navegador os dados cadastrados anteriormente no banco de dados.
+
+Agora é só estudar e desenvolver suas aplicações.
 
 # Como citar este conteúdo
 ```
