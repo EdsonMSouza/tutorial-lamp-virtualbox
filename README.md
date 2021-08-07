@@ -161,7 +161,7 @@ try {
 }
 ```
 
-Para salvar o conteúdo, pressione as teclas ```CTRL+X``` simultaneamente, depois digite ```Y``` e, por fim, pressione [ENTER].
+Para salvar o conteúdo, pressione as teclas ```CTRL+X``` simultaneamente, depois digite ```Y``` e, por fim, pressione ```ENTER```.
 
 Acesse novamente o navegador e digite: [http://localhost/teste](http://localhost/teste)
 
