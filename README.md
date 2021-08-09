@@ -130,7 +130,7 @@ Criando um usuário **admin** padrão no banco de dados diferente de **root**.
 
 Para isso, digite as linhas abaixo (**uma linha por vez**) e pressione ```ENTER``` para executá-la.
 
-**Não esqueça** de colocar o ponto-e-vírgula ";" no final de cada linha.
+**Não esqueça** de colocar o ponto-e-vírgula "**```;```**" no final de cada linha.
 
 1. ```CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';```
 2. ```GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';```
