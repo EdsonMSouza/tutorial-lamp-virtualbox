@@ -45,23 +45,27 @@ Para executar comandos no terminal do Linux é necessário pressionar a tecla ``
 
 Acesse o **Terminal do Linux** pressionando as teclas ```CTRL+ALT+T```. Uma outra forma é pressionar a tecla ```Windows``` e digitar **cmd**
 
-1. Primeiro, precisaremos **atualizar o índice** do repositório do sistema para instalar a versão mais recente do Apache2 (Servidor Web)
+Primeiro, precisaremos **atualizar o índice** do repositório do sistema para instalar a versão mais recente do Apache2 (Servidor Web)
+
 ```sudo apt-get update```
 
-2. A seguir **atualize os pacotes**. (Pressione ```Y``` quando solicitado).
-    + ```sudo apt-get upgrade```
+A seguir **atualize os pacotes**. (Pressione ```Y``` quando solicitado).
 
-3. Abrindo as portas 22 (SSH), 80 (HTTP) and 443 (HTTPS) e habilitando o Firewall (ufw). **Execute um comando de cada vez**.
-    + ```sudo ufw allow ssh```
-    + ```sudo ufw allow 80```
-    + ```sudo ufw allow 443```
-    + ```sudo ufw enable```
+```sudo apt-get upgrade```
+
+Abrindo as portas 22 (SSH), 80 (HTTP) and 443 (HTTPS) e habilitando o Firewall (ufw). **Execute um comando de cada vez**.
++ ```sudo ufw allow ssh```
++ ```sudo ufw allow 80```
++ ```sudo ufw allow 443```
++ ```sudo ufw enable```
 
 ## Instalando o servidor Apache
 ```sudo apt install apache2```
 
 ## Testando a instalação do Apache
+
 ```sudo systemctl status apache2```
+
 1. Pressione CTRL+C para sair.
 2. Em seguida, abra o navegador da web (Firefox) e acesse a página de boas-vindas do apache, digitando: [http://localhost](http://localhost).
 
@@ -70,6 +74,7 @@ Acesse o **Terminal do Linux** pressionando as teclas ```CTRL+ALT+T```. Uma outr
 
 ## Verificando a instalação do PHP 7.4
 Retorne para o Terminal do Linux e digite:
+
 ```php --version```
 
 O resultado será parecido (ou igual) ao apresentado a seguir para sistemas Windows.
@@ -112,12 +117,13 @@ Na próxima pergunta, pressione **Y** para definir uma senha de ```**root**``` (
 Para as próximas perguntas, você pode pressionar ```Enter``` para cada um dos itens.
 
 ## Acessando o MySQL via CLI (*Command Line*)
-Digite o seguinte comando
+Digite o seguinte comando:
+
 ```sudo mysql```
 
 Você receberá um [PROMPT] no Terminal Linux com o seguinte formato: ```MariaDB [(none)]>```.
 
-## Criação de usuário no MAriaDB
+## Criação de usuário no MariaDB
 Criando um usuário **admin** padrão no banco de dados diferente de **root**.
 
 Para isso, digite as linhas abaixo (**uma linha por vez**) e pressione ```ENTER``` para executá-la.
