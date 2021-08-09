@@ -84,7 +84,7 @@ PHP 7.3.26 (cli) (built: Jan 5 2021 15:10:35) ( ZTS MSVC15 (Visual C++ 2017) x64
 ) Copyright (c) 1997-2018 The PHP Group Zend Engine v3.3.26, Copyright (c)
 1998-2018 Zend Technologies
 ```
-## Reinicializando o servidor Apache para integrar PHP
+## Reinicializando o servidor Apache para integrar o PHP
 ```sudo systemctl restart apache2```
 
 ## Testando o funcionamento do servidor com o PHP
@@ -107,12 +107,12 @@ Exclua o arquivo criado com o seguinte comando:
 ```sudo systemctl status mariadb```
 + Se o comando não finalizar, pressione ```CTRL+C``` para sair.
 
-## Protegendo o banco de dados
+## Protegendo o MariaDB
 ```sudo mysql_secure_installation```
 
-Como não existe uma senha de  ```**root**``` definida para o banco de dados, você deve simplesmente pressionar ```Enter``` quando receber a seguinte mensagem: ```Enter current password for root (enter for none):```
+Como não existe uma senha de  **root** definida para o banco de dados, você deve simplesmente pressionar ```Enter``` quando receber a seguinte mensagem: ```Enter current password for root (enter for none):```
 
-Na próxima pergunta, pressione **Y** para definir uma senha de ```**root**``` (**mantenha-a segura e protegida!**) e siga as orientações.
+Na próxima pergunta, pressione **Y** para definir uma senha de **root** (***mantenha-a segura e protegida!***) e siga as orientações.
 
 Para as próximas perguntas, você pode pressionar ```Enter``` para cada um dos itens.
 
@@ -121,7 +121,9 @@ Digite o seguinte comando:
 
 ```sudo mysql```
 
-Você receberá um [PROMPT] no Terminal Linux com o seguinte formato: ```MariaDB [(none)]>```.
+Você terá na tela algo semelhante a:
+
+```MariaDB [(none)]>```
 
 ## Criação de usuário no MariaDB
 Criando um usuário **admin** padrão no banco de dados diferente de **root**.
