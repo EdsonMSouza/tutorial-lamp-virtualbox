@@ -138,7 +138,7 @@ Para isso, digite as linhas abaixo (**uma linha por vez**) e pressione ```ENTER`
 4. ```quit;```
 
 ## Acessando o MariaDB
-Para acessar o MariaDB com o novo usuárioc riado, digite o comando a seguir e informe a senha definida anteriormente (*admin*) quando solicitado:
+Para acessar o MariaDB com o novo usuário criado, digite o comando a seguir e informe a senha definida anteriormente (**admin**) quando solicitado:
 
 ```sudo mysql -u admin -p```
 
