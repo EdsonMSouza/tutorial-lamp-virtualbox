@@ -77,7 +77,7 @@ Retorne para o Terminal do Linux e digite:
 
 ```php --version```
 
-O resultado será parecido (ou igual) ao apresentado a seguir para sistemas Windows.
+O resultado será semelhante ao apresentado a seguir.
 
 ```html
 PHP 7.3.26 (cli) (built: Jan 5 2021 15:10:35) ( ZTS MSVC15 (Visual C++ 2017) x64
