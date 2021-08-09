@@ -84,7 +84,7 @@ PHP 7.3.26 (cli) (built: Jan 5 2021 15:10:35) ( ZTS MSVC15 (Visual C++ 2017) x64
 ) Copyright (c) 1997-2018 The PHP Group Zend Engine v3.3.26, Copyright (c)
 1998-2018 Zend Technologies
 ```
-## Reinicializando o servidor Apache para se integrar ao PHP
+## Reinicializando o servidor Apache para integrar PHP
 ```sudo systemctl restart apache2```
 
 ## Testando o funcionamento do servidor com o PHP
