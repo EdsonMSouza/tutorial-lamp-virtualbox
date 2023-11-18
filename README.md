@@ -4,7 +4,12 @@
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
 
+## __$\color{red}{ATENÇÃO}$__
 Este tutorial está baseado na versão do Linux Ubuntu 20.4 LTS.
+
+**Uma versão atualizada para o Ubuntu 22.04.3 LTS** está disponível em: [https://github.com/EdsonMSouza/Apache-PHP-MariaDB](https://github.com/EdsonMSouza/Apache-PHP-MariaDB)
+
+## Introdução
 
 Os recursos para a instalação da máquina virtual foram configurados para atender a grande maioria de usuários. Entretanto, podem ocorrer casos em que haverá a necessidade de ajustes. Para isso, procure tutoriais no YouTube ou Google para resolução de problemas.
 
