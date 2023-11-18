@@ -7,7 +7,7 @@
 ## __$\color{red}{ATENÇÃO}$__
 Este tutorial está baseado na versão do Linux Ubuntu 20.4 LTS.
 
-**Uma versão atualizada para o Ubuntu 22.04.3 LTS** está disponível em: [https://github.com/EdsonMSouza/Apache-PHP-MariaDB](https://github.com/EdsonMSouza/Apache-PHP-MariaDB)
+**Uma versão atualizada para o Linux Ubuntu 22.04.3 LTS** está disponível em: [https://github.com/EdsonMSouza/Apache-PHP-MariaDB](https://github.com/EdsonMSouza/Apache-PHP-MariaDB)
 
 ## Introdução
 
